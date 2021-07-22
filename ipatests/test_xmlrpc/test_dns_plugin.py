@@ -560,6 +560,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -651,6 +661,15 @@ class test_dns(Declarative):
                                 u"'@'. ",
                         'label': u"setting Authoritative nameserver"
                      }},
+                    {'message': "'idnssoaserial' option is deprecated."
+                                " Value will be ignored.",
+                     'code': 13004,
+                     'data': {
+                         'additional_info': 'Value will be ignored.',
+                         'option': 'idnssoaserial'
+                     },
+                     'name': 'OptionDeprecatedWarning',
+                     'type': 'warning'}
                 )
             },
         ),
@@ -696,6 +715,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -731,6 +760,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -1803,6 +1842,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -1837,6 +1886,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -2023,6 +2082,16 @@ class test_dns(Declarative):
                                          u'grant %(realm)s krb5-self * SSHFP;'
                                          % dict(realm=api.env.realm)],
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -2276,6 +2345,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -2323,6 +2402,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -2355,6 +2444,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -2462,6 +2561,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -2656,6 +2765,16 @@ class test_dns(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -3507,6 +3626,16 @@ class test_root_zone(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -4789,6 +4918,16 @@ class test_forward_master_zones_mutual_exlusion(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -4983,6 +5122,16 @@ class test_forward_master_zones_mutual_exlusion(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -5202,7 +5351,15 @@ class test_forwardzone_delegation_warnings(Declarative):
                         'fwzone': zone1_sub_fw,
                         'ns_rec': zone1_sub_fw[:-len(zone1_absolute) - 1]
                      }},
-                ),
+                    {'code': 13004,
+                     'data': {
+                         'additional_info': 'Value will be ignored.',
+                         'option': 'idnssoaserial'
+                     },
+                     'message': "'idnssoaserial' option is deprecated."
+                                " Value will be ignored.",
+                     'name': 'OptionDeprecatedWarning',
+                     'type': 'warning'}),
             },
         ),
 
@@ -5248,7 +5405,15 @@ class test_forwardzone_delegation_warnings(Declarative):
                         'fwzone': zone1_sub_fw,
                         'ns_rec': zone1_sub_fw[:-len(zone1_sub) - 1]
                      }},
-                ),
+                    {'code': 13004,
+                     'data': {
+                         'additional_info': 'Value will be ignored.',
+                         'option': 'idnssoaserial'
+                     },
+                     'message': "'idnssoaserial' option is deprecated."
+                                " Value will be ignored.",
+                     'name': 'OptionDeprecatedWarning',
+                     'type': 'warning'}),
             },
         ),
 
@@ -5687,6 +5852,16 @@ class test_dns_soa(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -5734,6 +5909,16 @@ class test_dns_soa(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
 
@@ -6163,6 +6348,16 @@ class test_dns_soa(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
         dict(
@@ -6206,6 +6401,16 @@ class test_dns_soa(Declarative):
                     'idnsallowquery': [u'any;'],
                     'objectclass': objectclasses.dnszone,
                 },
+                'messages' : ({
+                    'code': 13004,
+                    'data': {
+                        'additional_info': 'Value will be ignored.',
+                        'option': 'idnssoaserial'
+                    },
+                    'message': "'idnssoaserial' option is deprecated."
+                               " Value will be ignored.",
+                    'name': 'OptionDeprecatedWarning',
+                    'type': 'warning'},),
             },
         ),
         dict(
@@ -6265,8 +6470,16 @@ class test_dns_soa(Declarative):
                         'hint': u"NS record(s) can be edited in zone apex - "
                                 u"'@'. ",
                         'label': u"setting Authoritative nameserver",
-                    },
-                }], },
+                    }},
+                    {'code': 13004,
+                     'data': {
+                         'additional_info': 'Value will be ignored.',
+                         'option': 'idnssoaserial'
+                     },
+                     'message': "'idnssoaserial' option is deprecated."
+                                " Value will be ignored.",
+                     'name': 'OptionDeprecatedWarning',
+                     'type': 'warning'}], },
         ),
         dict(
             desc='Deleting a zone - %r' % zone6,
@@ -6328,9 +6541,16 @@ class test_dns_soa(Declarative):
                         'hint': u"NS record(s) can be edited in zone apex - "
                                 u"'@'. ",
                         'label': u"setting Authoritative nameserver",
-                    },
-                }],
-            },
+                    }},
+                    {'code': 13004,
+                     'data': {
+                         'additional_info': 'Value will be ignored.',
+                         'option': 'idnssoaserial'
+                     },
+                     'message': "'idnssoaserial' option is deprecated."
+                                " Value will be ignored.",
+                     'name': 'OptionDeprecatedWarning',
+                     'type': 'warning'}], },
         ),
         dict(
             desc='Deleting a zone - %r' % zone6,
