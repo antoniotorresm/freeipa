@@ -25,6 +25,7 @@ import random
 import dns.name
 import dns.exception
 import dns.resolver
+import dns.nameserver
 import dns.rdataclass
 import dns.rdatatype
 import dns.reversename
@@ -42,6 +43,8 @@ logger = logging.getLogger(__name__)
 
 ipa_resolver = None
 
+dns_policy = None
+dns_verify = True
 
 def get_ipa_resolver():
     global ipa_resolver
@@ -193,6 +196,19 @@ class DNSResolver(dns.resolver.Resolver):
             self._nameservers = nameservers
         # Set nameserver_ports after successfull call to setter
         self.nameserver_ports = nameserver_ports
+
+    @classmethod
+    def _enrich_nameservers(cls, nameservers, nameserver_ports, default_port):
+        enriched_nameservers = super()._enrich_nameservers(nameservers,
+                                                           nameserver_ports,
+                                                           default_port)
+        if dns_policy is not None and dns_policy == 'enforced':
+            for ns in nameservers:
+                enriched_nameservers.insert(0,
+                                            dns.nameserver.DoTNameserver(
+                                                ns, verify=dns_verify))
+        return enriched_nameservers
+
 
 
 class DNSZoneAlreadyExists(dns.exception.DNSException):

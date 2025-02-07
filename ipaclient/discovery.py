@@ -29,6 +29,7 @@ from ipalib import errors
 from ipalib.constants import FQDN
 from ipalib.util import validate_domain_name
 from ipapython.dnsutil import query_srv, resolve
+from ipapython import dnsutil
 
 from ipaplatform.paths import paths
 from ipapython.ipautil import valid_ip, realm_to_suffix
@@ -53,6 +54,7 @@ NO_TLS_LDAP = -6
 PYTHON_LDAP_NOT_INSTALLED = -7
 BAD_HOST_CONFIG = -10
 UNKNOWN_ERROR = -15
+DOT_SETUP_REQUIRED = -16
 
 IPA_BASEDN_INFO = 'ipa v2.0'
 
@@ -305,6 +307,13 @@ class IPADiscovery:
         else:
             self.kdc = ', '.join(servers)
             self.kdc_source = "Kerberos DNS record discovery bypassed"
+
+        # Now that we were able to discover Kerberos environment while
+        # running with DoT configuration, it is time to set up proper
+        # forwarder so that openldap-libs and krb5 would work.
+        if dnsutil.dns_policy is not None and self.kdc is not None:
+            logger.debug("[DoT mode, DNS resolver setup is required]")
+            return DOT_SETUP_REQUIRED
 
         # We may have received multiple servers corresponding to the domain
         # Iterate through all of those to check if it is IPA LDAP server
